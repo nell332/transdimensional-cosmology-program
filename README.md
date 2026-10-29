@@ -11,7 +11,7 @@ It is positioned as an ontological research program rather than a fully verified
 
 **Author**: Yi Dong
 **Affiliation**: Jinan Lixin Digital Technology Co., Ltd.
-**Zenodo DOI**: `10.5281/zenodo.XXXXXXX` (replace with your actual DOI after publication)
+**Zenodo DOI**: `10.5281/zenodo.23758108` (replace with your actual DOI after publication)
 
 ## Core Framework
 
