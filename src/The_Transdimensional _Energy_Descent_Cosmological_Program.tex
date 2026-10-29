@@ -1,226 +1,315 @@
 \documentclass[12pt,a4paper]{article}
-\usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb}
+\usepackage{amsmath,amssymb,geometry}
+\usepackage{graphicx}
+\usepackage{cite}
 \usepackage{hyperref}
-\usepackage{abstract}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    citecolor=blue,
-    urlcolor=blue
-}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\linespread{1.5}
 
-\title{The Transdimensional Energy Descent Cosmological Program: \\
-A Unified Cosmological Framework Based on Dimensional Interface Dynamics}
-\author{Yi Dong \\
-\textit{Jinan Lixin Digital Technology Co., Ltd.}}
+\title{Transdimensional Energy Cascade Cosmology Programme: A Unified Cosmological Framework Based on Dimensional Interface Dynamics}
+\author{Dong Yi \\ Jinan Lixin Digital Technology Co., Ltd.}
 \date{}
 
 \begin{document}
-
 \maketitle
 
 \begin{abstract}
-Mainstream cosmology and particle physics currently adopt a domain-separated effective theoretical framework. While the $\Lambda$CDM model successfully describes the large-scale evolution of the universe, the physical nature of dark matter and dark energy remains unclear, and the underlying mechanisms of singularities and early cosmic inflation are yet to be identified. The Standard Model of particle physics unifies three fundamental microscopic interactions but cannot incorporate gravity; the ontodynamic mechanism of mass-energy conversion has also long remained unexplained. General relativity and quantum mechanics present irreconcilable contradictions at the Planck scale. Leading quantum gravity proposals rely on numerous additional ad hoc assumptions and have long lacked directly testable observational predictions.
+Current mainstream cosmology and particle physics adopt a domain-separated effective-theory framework. The $\Lambda$CDM model successfully describes large-scale cosmic evolution, yet the physical nature of dark matter and dark energy remains unresolved, and the underlying mechanism for singularities and early inflation is missing. The Standard Model of particle physics unifies three microscopic interactions but cannot incorporate gravity, while the ontological dynamical mechanism for mass–energy conversion has long been left open. General relativity and quantum mechanics exhibit irreconcilable conflicts at the Planck scale. Leading quantum-gravity proposals introduce many independent ad-hoc assumptions and have long lacked exclusive observational predictions that can be directly tested.
 
-This paper proposes a unified cosmological research program built on transdimensional descent of higher-dimensional energy and dimensional interface tension. Starting from four fundamental axioms, it defines the speed of light $c$ as the intrinsic interface velocity at which higher-dimensional energy descends into three-dimensional space. It argues that mass is not an intrinsic static property of particles, but a steady-state manifestation of descending energy whose intrinsic velocity is attenuated by crowded collisions and interaction drag in three-dimensional space. This interpretation provides a continuous dynamical account for the mass-energy equivalence relation $E=mc^2$.
+This paper presents a unified cosmological research programme built upon high-dimensional energy cascading across dimensional boundaries and dimensional interface tension. The programme starts from four foundational axioms and defines the speed of light $c$ as the intrinsic interface velocity at which high-dimensional energy cascades into three-dimensional space. Within this framework, mass is not an intrinsic static property of particles; instead, it emerges as a steady-state manifestation after cascading energy is retarded by crowding collisions and interactions within the 3D space, providing a continuous dynamical interpretation for the mass–energy relation $E=mc^2$.
 
-Within this framework, the Big Bang singularity corresponds to a white hole channel ejecting energy from four-dimensional into three-dimensional space. In the minuscule volume of the early universe, energy density exceeded the saturation threshold of three-dimensional space. Highly crowded energy units collided frequently, their descent velocity dropped sharply, and matter formed in bulk within an extremely short period—this corresponds to the cosmic inflation epoch. Freely descending energy that did not undergo collision drag maintains propagation at the speed of light and constitutes the cosmic microwave background radiation. Gravity, electromagnetic force and nuclear force are all interpreted as derivative effects of transdimensional tension across different dimensional interfaces at different scales. The apparent randomness of quantum phenomena arises from time-domain undersampling aliasing caused by the bandwidth limit of three-dimensional observation. Quantum entanglement corresponds to correlated projections of a single higher-dimensional entity at multiple locations in three-dimensional space, which naturally circumvents the paradoxes of local hidden variables and superluminal causality.
+In this framework, the Big Bang singularity corresponds to a white-hole channel injecting energy from four dimensions into three dimensions. In the early universe, energy density within an extremely small volume exceeded the saturation threshold of the 3D host medium. Energy units crowded and collided intensely, causing rapid decay of the cascade velocity and bulk generation of matter within an extremely short timescale, corresponding to cosmic inflation. Free cascading energy that avoids collisional retardation propagates at near-light speed and forms the cosmic microwave background radiation. Gravitation, electromagnetism, and nuclear forces are interpreted as derivative effects of transdimensional interfacial tension emerging across different scales and dimensional combinations. The apparent randomness of quantum states arises from temporal aliasing caused by the limited observation bandwidth of 3D measurement; quantum entanglement corresponds to multiple 3D projections of a single high-dimensional object, naturally evading local hidden-variable and superluminal causal paradoxes.
 
-This paper also presents multiple testable observational predictions and a complete set of first-order phenomenological dynamical equations, providing directions for subsequent quantitative verification and discriminative experiments. This program constitutes a unified research framework at the ontological level. It does not negate the computational validity of existing physical theories within their domains of applicability, and aims to connect microscopic, macroscopic and cosmic-scale physical pictures with fewer ad hoc assumptions.
+This work presents a set of testable observational predictions together with a full suite of first-order phenomenological dynamical equations, guiding future quantitative validation and discriminative experiments. This programme is an ontological unified framework and does not negate the computational validity of existing physical theories within their respective domains. It aims to connect microscopic, macroscopic and cosmological scales with fewer independent ad-hoc postulates.
 
-\medskip
-\noindent \textbf{Keywords}: transdimensional dynamics; cosmic origin; mass-energy conversion; quantum entanglement; dark matter effect; dimensional interface tension
+This version is an open discussion draft (v0.1 revised). Some equations are phenomenological placeholders; their parameters and asymptotic behaviours will be refined in subsequent revisions. Revisions and discussion materials are hosted in an open-source repository:
+\url{https://github.com/nell332/transdimensional-cosmology-program.git}, with version records archived on Zenodo:
+\url{https://doi.org/10.5281/zenodo.23765255}.
+
+\textbf{Keywords}: transdimensional dynamics; cosmic origin; mass–energy conversion; quantum entanglement; dark-matter effects; dimensional interface tension
 \end{abstract}
 
 \section{Introduction}
-\subsection{Research Background and Open Problems}
-Over the past half century, cosmology and particle physics have made milestone advances. The $\Lambda$CDM cosmological model has accurately fitted the evolution of cosmic large-scale structure via high-precision Planck satellite observations of the cosmic microwave background \cite{planck2018}. The Standard Model of particle physics has successfully unified the electromagnetic, strong and weak interactions, and all particles it predicts have been experimentally verified \cite{oerter2006}.
+\subsection{Background and Existing Problems}
+Over the past half-century, cosmology and particle physics have achieved landmark progress. The $\Lambda$CDM cosmological model precisely fits the evolution of large-scale cosmic structure via high-precision CMB observations from the Planck satellite \cite{planck2018}. The Standard Model of particle physics successfully unifies electromagnetic, strong and weak interactions, and all its predicted particles have been experimentally confirmed \cite{oerter2006}.
 
-Nevertheless, the existing theoretical system still suffers from deep structural limitations:
+Nevertheless, the existing theoretical system retains deep structural limitations:
 \begin{enumerate}
-    \item \textbf{Theoretical fragmentation}: General relativity describes macroscopic gravity while quantum mechanics describes microscopic particles. The two are fundamentally incompatible at the Planck scale and around black hole singularities, and no consensus solution to the quantum gravity problem has been reached to date \cite{weinberg1972}.
-    \item \textbf{Redundant ad hoc assumptions}: To match observational data, the $\Lambda$CDM model introduces multiple independent physical entities including dark matter, dark energy and cosmic inflation, whose nature and microscopic origins remain unknown, giving the model an overall "patchwork" character.
-    \item \textbf{Missing underlying mechanisms}: Special relativity establishes the mass-energy relation $E=mc^2$ but does not explain the dynamical process of conversion between mass and energy. The measurement problem and nonlocality of entanglement in quantum mechanics have persisted with multiple coexisting interpretations, lacking a unified ontological picture \cite{bell1964}.
+\item \textbf{Theoretical fragmentation}: General relativity describes gravitational phenomena at macroscopic scales, while quantum mechanics governs microscopic particles. They conflict fundamentally at the Planck scale, black-hole singularities and related regimes; no consensus quantum-gravity scheme has emerged \cite{weinberg1972, rovelli2004}.
+\item \textbf{Large number of free parameters}: To match observational data, the $\Lambda$CDM model introduces dark matter, dark energy, cosmic inflation and other components whose microscopic origins and underlying physical mechanisms lack first-principles explanations \cite{peebles1993}.
+\item \textbf{Unresolved foundational mechanisms}: Special relativity supplies the mass–energy relation $E=mc^2$, but does not explain the dynamical process by which mass and energy interconvert. The measurement problem and nonlocality of entanglement in quantum mechanics sustain multiple competing interpretations, without a unified ontological picture \cite{bell1964, zeilinger2010}.
 \end{enumerate}
 
-Some frontier quantum gravity approaches, represented by string theory, pursue mathematical self-consistency and symmetry as core principles, introducing elaborate ad hoc structures such as extra dimensions, supersymmetry and compactification. However, they have yet to produce exclusive predictions testable by existing experimental and observational methods, and their physical reality remains widely debated in the academic community.
+Some frontier quantum-gravity approaches, exemplified by string theory, prioritise mathematical self-consistency and symmetry, introducing extra dimensions, supersymmetry, compactification and elaborate structures. However, they have consistently failed to produce exclusive predictions accessible to current experiments or astronomical observations, and their physical reality remains debated within the community \cite{smolin2006, witten1995}.
 
-\subsection{Approach of This Work}
-Instead of the conventional route of appending correction terms to the standard model, this paper attempts to construct a minimal-axiom underlying dynamical framework. Centered on the mechanisms of transdimensional migration, descent and drag of higher-dimensional energy, it integrates gravity, microscopic interactions, mass-energy conversion, quantum phenomena, cosmic origin and dark matter effects into a single ontological picture.
+\subsection{Research Strategy of This Work}
+Instead of adding correction terms incrementally to the Standard Model, this work constructs an axiomatically minimal underlying dynamical framework centred on transdimensional migration, cascading and retardation of high-dimensional energy. Gravity, microscopic interactions, mass–energy conversion, quantum phenomena, cosmic origin and dark-matter effects are all embedded within one shared ontological picture.
 
-This work is positioned as a unified research program, not a fully verified mature physical theory. Its core value lies in resolving multiple logical fractures in the existing theoretical system with the fewest independent assumptions, and providing a unified underlying picture for subsequent quantitative modeling and experimental testing.
+This work is framed as a unified research programme rather than a fully quantitatively verified mature physical theory. Its core value lies in reducing independent assumptions, resolving many logical fractures in the current theoretical landscape, and furnishing a unified underlying image for subsequent quantitative modelling and experimental testing.
 
-\section{Fundamental Axioms and Core Phenomenological Dynamics}
-All derivations in this program are built upon four basic axioms, with no additional independent ad hoc assumptions.
+> \textbf{Declaration}: The term “dimension” in this programme is first defined as an \textbf{interface dimension for energy coupling}. It is not equivalent to compact coordinate dimensions in Kaluza–Klein theory. Whether these may be further interpreted as geometric spatial dimensions is reserved for future work on transdimensional metric geometry.
 
-\subsection{Basic Axioms}
-\paragraph{Axiom 1 — Temporal positivity and entropy increase principle}
-Time is positively irreversible, and entropy increase is the fundamental constraint governing energy and matter conversion. Evolution patterns violating temporal positivity and entropy increase cannot stably exist in this universe.
+\section{Foundational Axioms and Core Phenomenological Dynamics}
+The labels “3D space”, “4D native energy”, “2D space” and similar expressions below refer to layers of energy-coupling interfaces, not compact coordinate dimensions. This convention applies throughout the manuscript.
 
-\paragraph{Axiom 2 — Layered dimensions and transdimensional migration}
-The universe possesses a layered dimensional structure. Higher-dimensional space is not bound by the work constraints of three-dimensional space. Energy can migrate and descend across dimensions. Descent from higher to lower dimensions has an intrinsic interface velocity. The formation and maintenance of dimensional channels require corresponding energy coupling conditions.
+All derivations in this programme rest upon four foundational axioms, with no additional independent ad-hoc assumptions.
 
-\paragraph{Axiom 3 — Energy saturation threshold of three-dimensional space}
-Three-dimensional space has a saturation capacity limit $n_{\text{sat}}$ per unit volume for carrying descending higher-dimensional energy. When the number density of energy units exceeds this threshold, energy units become crowded, collide and retard one another.
+\subsection{Foundational Axioms}
+\textbf{Axiom 1: Temporal directionality and entropy increase}
+Time is irreversible and forward-directed. Entropy increase acts as a fundamental constraint on transformations between energy and matter. Evolution modes violating temporal directionality and entropy increase cannot persist stably within this universe \cite{landau1980}.
 
-\paragraph{Axiom 4 — Universal energy conservation}
-The total energy of the entire universe is conserved. Energy is neither created nor destroyed out of nothing; it only transforms between different forms and different dimensional coupling states.
+\textbf{Axiom 2: Layered dimensions and transdimensional migration}
+The universe possesses a layered dimensional structure. High-dimensional domains are not subject to the work constraints of three-dimensional space. Energy may migrate and cascade across dimensions. Cascading from higher to lower dimensions carries an intrinsic interfacial velocity. Generation and maintenance of a dimensional channel require corresponding energy-coupling conditions.
 
-\subsection{Definition of Core Physical Quantities and Descent Dynamics Equations}
-\textbf{Definition of intrinsic descent velocity $v_d$}: the inherent interface speed at which primordial higher-dimensional energy descends into three-dimensional space. In the absence of any three-dimensional drag, the intrinsic descent velocity reaches its maximum value $c$, the speed of light in vacuum.
+\textbf{Axiom 3: Saturation threshold for energy in 3D space}
+There exists an upper saturation energy density $\rho_{\text{sat}}$ for high-dimensional cascading energy per unit volume of 3D space. When local energy density exceeds this threshold, energy units crowd, collide and mutually retard one another. Each energy unit carries a fixed intrinsic energy $\varepsilon_0$, so $\rho = n \varepsilon_0$, where $n$ is the number density of energy units.
 
-The total energy of a single energy unit is decomposed into a descent kinetic component and a rest energy component, satisfying global conservation:
+\textbf{Axiom 4: Global energy conservation}
+The total energy of the universe is conserved. Energy cannot be created or destroyed ex nihilo; it only transforms between different forms and dimensional coupling states \cite{noether1918}.
+
+\subsection{Core Definitions and Cascading Dynamical Equations}
+Define the \textbf{intrinsic cascade velocity} $v_d$: an interfacial parameter describing the native rate at which high-dimensional primordial energy cascades into 3D space.
+
+\textbf{Important distinction}: $v_d$ is an interfacial dynamical parameter internal to this programme, not the coordinate motion velocity of a particle within 3D spacetime. The mapping between them is left for future refinement.
+
+When energy experiences no 3D retardation, the intrinsic cascade velocity reaches its maximum value $c$, the speed of light in vacuum.
+
+The total energy of a single energy unit splits into a cascade kinetic component and a rest-energy component, subject to global conservation:
 \begin{equation}
 E = E_k + E_m = \text{constant}
 \end{equation}
-
-where the descent kinetic component takes the first-order phenomenological form $E_k = \frac{1}{2} m_0 v_d^2$, and the rest energy component is $E_m = m(v_d) c^2$. Combining with energy conservation yields the phenomenological relation between rest mass and descent velocity:
+The first-order phenomenological form for the cascade kinetic component within this framework is $E_k = \frac{1}{2} m_0 v_d^2$. This expression describes energy partitioning within the transdimensional interface and is not directly identical to 3D relativistic kinetic energy. The rest-energy term is $E_m = m(v_d) c^2$. Combining energy conservation yields the phenomenological relation between rest mass and cascade velocity:
 \begin{equation}
-m(v_d) = m_0\left(1-\frac{v_d^2}{2c^2}\right)
+m(v_d) = m_0 \left( 1 - \frac{v_d^2}{2c^2} \right)
 \end{equation}
 
-When $v_d = c$, rest mass approaches zero, corresponding to pure radiation states such as photons. When $v_d \ll c$, it reduces to the steady rest mass $m_0$, corresponding to ordinary matter.
+Equation (2) is a first-order phenomenological expansion. For $v_d \ll c$, it reduces to the steady rest mass $m_0$, corresponding to ordinary matter. As $v_d \to c$, the first-order form gives $m \to m_0/2$. To enforce $m=0$ exactly at $v_d=c$ (required for photons and pure radiation states), a second-order modified form satisfying both boundary conditions is adopted:
+\begin{equation*}
+m(v_d) = m_0 \sqrt{1 - \frac{v_d^2}{c^2}} \tag{2b}
+\end{equation*}
+Expanded for small $v_d/c$, equation (2b) recovers $m_0\left(1 - v_d^2/(2c^2)\right)$, consistent with the low-order behaviour of (2), while yielding $m=0$ strictly when $v_d=c$. All qualitative conclusions requiring zero photon rest mass in this paper use (2b); equation (2) is retained as a low-order approximation to illustrate the monotonic trend of mass with cascade velocity.
 
-The evolution of descent velocity under three-dimensional collision drag satisfies the first-order dynamical equation:
+It should be emphasised that although (2b) mathematically resembles the reciprocal of the relativistic Lorentz factor ($m=m_0/\gamma$), $v_d$ in this framework is the transdimensional intrinsic cascade velocity rather than the 3D coordinate velocity of a particle. The physical interpretation is entirely different. This formal coincidence suggests that 3D relativistic mass–velocity relations may emerge from transdimensional interfacial dynamics, but a rigorous mapping is deferred to future work.
+
+The evolution of cascade velocity under collisional retardation in 3D follows the first-order dynamical equation:
 \begin{equation}
 \frac{dv_d}{dt} = -\alpha \cdot n \cdot v_d
 \end{equation}
+where $\alpha$ is the 3D collisional retardation coefficient (a phenomenological fitting parameter), and $n$ is the local number density of energy units.
 
-where $\alpha$ is the three-dimensional collision drag coefficient (a phenomenological parameter to be fitted) and $n$ is the local number density of energy units.
+Combining (2b) and (3), exponential decay of $v_d$ from its initial value corresponds to rest mass growing from zero toward $m_0$, covering the full mass-generation range. If only the first-order form (2) is used, mass is confined between $m_0/2$ and $m_0$, which motivates the second-order correction. The use of $m_0$ as the inertia coefficient in $E_k$ is a low-order phenomenological choice; higher-order corrections can absorb velocity-dependent inertia into modified terms without altering the core picture of mass increasing as cascade velocity falls.
 
-\section{Cosmic Origin and Early Evolution: White Hole Singularity and Inflation Mechanism}
-\subsection{The Ontology of the Big Bang: White Hole Energy Eruption}
-This program proposes that the Big Bang singularity is essentially a white hole channel injecting primordial four-dimensional energy into three-dimensional space. At the birth of the universe, the white hole instantaneously injected high-flux higher-dimensional descending energy into an extremely small three-dimensional volume, with initial energy density far exceeding the three-dimensional saturation threshold $n_{\text{sat}}$.
+\section{Cosmic Origin and Early Evolution: White-Hole Singularity and Inflation Mechanism}
+\subsection{Ontology of the Big Bang: White-Hole Energy Injection}
+This programme proposes that the Big Bang singularity is fundamentally a white-hole channel injecting 4D primordial energy into 3D space. At cosmic birth, the white hole delivered a high flux of cascading energy into an extremely compact 3D volume, with initial energy density vastly exceeding the saturation threshold $\rho_{\text{sat}}$ of 3D space.
 
 \subsection{Bulk Matter Generation and Cosmic Inflation}
-According to Axiom 3, when energy density exceeds the saturation threshold, energy units become highly dense and collide frequently. The intrinsic descent velocity drops drastically within a very short time, corresponding to the bulk generation of rest mass. The generation rate of matter number density follows the phenomenological equation:
+By Axiom 3, when energy density exceeds saturation, energy units pack densely and collide frequently, causing wide-ranging decay of the intrinsic cascade velocity and corresponding bulk production of rest mass. The phenomenological equation for the matter-particle generation rate is:
 \begin{equation}
-\frac{dn_m}{dt} = k \cdot n^2 \cdot \left(1-\frac{n_{\text{sat}}}{n}\right) \cdot H(t)^{-1}
+\frac{dn_m}{dt} = k \cdot n^2 \cdot \left( 1 - \frac{n_{\text{sat}}}{n} \right) \cdot H(t)^{-1}
 \end{equation}
+where $k$ is the collision-solidification efficiency coefficient, and $H(t)$ is the Hubble parameter describing dilution from spatial expansion \cite{friedmann1922, hubble1929}.
 
-where $k$ is the collision solidification efficiency coefficient and $H(t)$ is the Hubble parameter describing the dilution effect of spatial expansion. When $n \gg n_{\text{sat}}$, the generation rate is proportional to the square of density, corresponding to inflationary matter production in the high-density early universe. When $n \to n_{\text{sat}}$, the generation rate approaches zero and the universe enters the structure-formation stage dominated by gravity.
+The $H(t)^{-1}$ term in (4) captures the enhancement of matter production in the early high-density regime before expansion dilutes energy. It applies when $n \gg n_{\text{sat}}$ and $H(t)\neq 0$. In the static or extreme deceleration limit $H(t)\to 0$, the phenomenological form is regularised:
+\begin{equation*}
+\frac{dn_m}{dt} = k \cdot n^2 \cdot \left( 1 - \frac{n_{\text{sat}}}{n} \right) \cdot \frac{H_0}{H(t) + H_0} \tag{4b}
+\end{equation*}
+where $H_0$ is the present Hubble constant. Setting $k'=k H_0$, (4b) becomes $\frac{dn_m}{dt} = k' n^2 (1-n_{\text{sat}}/n)/(H+H_0)$. When $H \gg H_0$, it matches (4) with $k'=kH_0$; when $H\to 0$, it yields a finite generation rate $k' n^2 (1-n_{\text{sat}}/n)/H_0$, avoiding divergence. Both forms give vanishing generation rate as $n\to n_{\text{sat}}$, consistent with the narrative that large-scale matter production no longer occurs in the modern universe.
 
-This mechanism directly explains why cosmic matter formed predominantly in the very early epoch and why the modern universe no longer produces matter on large scales: spatial expansion has diluted the energy density such that the crowding-collision solidification condition no longer holds.
+For $n \gg n_{\text{sat}}$, the generation rate scales with density squared, corresponding to inflationary matter production in the dense early universe. As $n \to n_{\text{sat}}$, the rate approaches zero, and the universe enters a structure-formation phase dominated by gravity.
 
-\subsection{Origin of the Cosmic Microwave Background Radiation}
-Not all energy erupted from the white hole participates in crowding collisions and mass generation. A fraction of energy units undergo no effective collision coupling after ejection; their intrinsic descent velocity remains near $c$, unattenuated, unsolidified and free of rest mass. This freely propagating primordial descending energy is what we observe today as the cosmic microwave background (CMB) radiation.
+This mechanism directly explains why cosmic matter formed predominantly in the very early universe and why new bulk matter is not created today: spatial expansion diluted energy density, removing the crowded-collision condition required for solidification.
 
-This mechanism answers a classic cosmological question—why the relic radiation from the Big Bang still propagates at near-light speed after billions of years without converting into matter: it is essentially unretarded pure descending energy that does not satisfy the collision-coupling condition for mass generation.
+For the horizon problem, this framework supplies a qualitative picture: before bulk matter generation, regions of 3D space remained transdimensionally connected via the unified evolution timeline of the high-dimensional substrate. The high-flux energy injected by the white hole rapidly aligned the high-dimensional evolutionary phase across all regions of the observable universe, providing a causal foundation for the large-scale uniformity of the CMB. Quantitative causal connectivity analysis requires transdimensional metric evolution equations and is reserved for future work \cite{guth1981, linde1982}.
+
+\subsection{Origin of the Cosmic Microwave Background}
+Not all energy ejected from the white hole participates in crowding collisions and mass generation. Some energy units escape effective collisional coupling after injection, retaining cascade velocity near $c$ without retardation or solidification and without acquiring rest mass. This freely propagating primordial cascading energy constitutes the observed cosmic microwave background radiation (CMB) \cite{penzias1965, smoot1992}.
+
+This mechanism answers a classic cosmological question: why Big Bang remnant radiation has travelled for billions of years at near-light speed without converting into matter. It is simply free cascading energy uncoupled from the collision conditions required for mass formation.
+
+Concerning the blackbody spectrum of the CMB: within this framework, free cascading energy redshifts and dilutes as space expands, stretching wavelengths continuously. Weak transdimensional coupling between free cascading energy and already solidified matter before recombination is sufficient to bring them into statistical equilibrium and imprint a blackbody spectrum. After recombination, this coupling is broken, and the free radiation propagates with an approximately blackbody spectrum to the present. In addition, the statistical distribution of high-dimensional energy injected through the white hole is itself nearly thermal, consistent with the high-flux injection picture. Rigorous spectral derivation is deferred to future quantitative work \cite{planck2018, komatsu2011}.
+
+It is explicitly noted that this thermalisation mechanism introduces “weak transdimensional coupling between free cascading energy and solidified matter” as an additional assumption not among the four foundational axioms. This remains an open problem in the current framework; the next revision will attempt to derive coupling strength and form from the channel-coupling condition in Axiom 2.
 
 \section{Unified Interpretation of Fundamental Interactions: Homologous Transdimensional Tension Effects}
-This program holds that the four fundamental interactions are not independent elementary forces, but derivative manifestations of transdimensional tension between dimensional interfaces at different dimensional combinations and different spatial scales.
+This programme proposes that the four fundamental interactions are not independent fundamental forces, but derivative manifestations of transdimensional interfacial tension appearing under different dimensional combinations and spatial scales.
 
-\subsection{Gravity: 3D-to-2D Transdimensional Descent Tension}
-Gravity is the spatial distortion effect caused by three-dimensional energy descending into two-dimensional space. Let $\varepsilon$ denote the spatial deformation variable; it satisfies a Poisson-type phenomenological equation with the local rest mass density $\rho_m$:
+The hierarchy of interaction strengths corresponds to differences in channel width and interfacial contact tightness for distinct dimensional pairs. Gravity corresponds to 3D$\to$2D channels with very small cross-section and low leakage; only large mass concentrations produce measurable deformation, so gravity is the weakest force. The nuclear force arises from tight 4D–3D interfacial contact at extremely short distances, so the tension acts directly with minimal dilution and dominates at microscopic scales. Electromagnetism is a 4D$\to$3D transition tension of intermediate strength, with attractive and repulsive polarities associated with charge sign. This channel picture rationalises the strength ordering of the four forces; quantitative strength ratios are left for future work \cite{griffiths, perkins}.
+
+\subsection{Gravitation: 3D–2D Transdimensional Cascade Tension}
+Gravity is a spatial distortion effect produced when 3D energy cascades toward a 2D interface. Define the spatial deformation variable $\varepsilon$, related to local rest-mass density $\rho_m$ by a Poisson-type phenomenological equation:
 \begin{equation}
 \nabla^2 \varepsilon = 4\pi G_\perp \rho_m
 \end{equation}
+where $G_\perp$ is the transdimensional tension coefficient. The deformation $\varepsilon$ maps linearly to the gravitational potential $\Phi$, $\Phi \propto \varepsilon$. In the weak-field, low-speed, small-deformation limit, this reduces to the Newtonian Poisson equation for gravity, fully compatible with ordinary observations \cite{chandrasekhar1965}.
 
-where $G_\perp$ is the transdimensional tension coefficient. Under the weak-field, low-velocity, small-deformation approximation, this equation reduces to Newton's gravitational Poisson equation and is fully compatible with everyday observations. The greater the total solidified matter in a unit volume, the larger the distortion amplitude of transdimensional descent and the stronger the gravitational effect.
-
-\subsection{Electromagnetic Force: 4D-to-3D Transdimensional Transition Tension}
-Electrons are incompletely frozen projections of higher-dimensional energy. They inherently tend to transition back into four dimensions, generating reverse transdimensional attraction that corresponds to the attraction between opposite charges. Meanwhile, constrained by the three-dimensional energy saturation threshold, accumulation of like high-energy projections produces saturation repulsion, corresponding to the repulsion between like charges.
+\subsection{Electromagnetism: 4D–3D Transdimensional Transition Tension}
+Electrons are incompletely frozen projections of high-dimensional energy with an intrinsic tendency to transition back toward the 4D domain, creating an inverse transdimensional attraction that corresponds to attraction between opposite charges. Meanwhile, the 3D saturation threshold creates exclusion when high-energy projections of the same type accumulate, corresponding to repulsion between like charges \cite{jackson1998}.
 
 \subsection{Nuclear Force: Short-Range Strong Coupling Tension at the 4D–3D Interface}
-The nuclear force arises from strong coupling binding tension at the 4D–3D interface at extremely short distances. Its distance dependence is described by a Yukawa-like potential:
+The nuclear force is a tightly bound short-range coupling tension at the 4D–3D interface. Its distance dependence is described by a Yukawa-like potential:
 \begin{equation}
 V(r) = -V_0 \cdot \frac{e^{-r/r_0}}{r/r_0}
 \end{equation}
+where $r_0$ is the critical transdimensional coupling distance (roughly $10^{-15}\,\text{m}$), and $V_0$ is the potential depth. When particle separation is smaller than this critical scale, the interfacial projection is tightly matched and strong binding emerges. Beyond the critical distance, transdimensional coupling decays exponentially and the force vanishes rapidly, matching the experimental signature of the nuclear force: short range, strong attraction and saturation \cite{yukawa1935, halzen1984}.
 
-where $r_0$ is the critical distance of transdimensional coupling (on the order of $10^{-15}\ \text{m}$) and $V_0$ is the coupling potential depth. When particle separation is below the critical scale, the transdimensional projection interfaces fit tightly, coupling is established, and strong binding emerges. When separation exceeds the critical value, transdimensional coupling decays exponentially and the force vanishes rapidly, perfectly matching the experimental features of the nuclear force: short range, strong attraction and saturation.
-
-\subsection{Black Holes, White Holes and Dark Matter Effects}
+\subsection{Black Holes, White Holes and Dark-Matter Effects}
 \begin{itemize}
-    \item \textbf{Black hole}: A stable channel for three-dimensional energy to descend into two dimensions, sustained by continuous matter inflow. When matter supply is insufficient, the dimensional channel gradually dissipates.
-    \item \textbf{White hole}: A channel injecting four-dimensional energy into three dimensions. The Big Bang singularity is a cosmic-scale white hole event. Black holes and white holes are distinct types of dimensional channels; there is no topological "black-hole-to-white-hole" connection.
-    \item \textbf{Dark matter effect}: Originates from residual 3D–2D transdimensional distortion tension left behind by extinct ancient black holes. The residual gravitational potential obeys the following attenuation relation with time and distance:
-    \begin{equation}
-    \Phi(r,t) = \Phi_0 \cdot \frac{e^{-t/\tau}}{r} \cdot e^{-r/r_d}
-    \end{equation}
-    where $\tau$ is the transdimensional tension relaxation time and $r_d$ is the spatial attenuation scale of the tension. Dark matter signals concentrate in regions that once hosted black holes; cosmic voids have weak residual tension and low dark matter abundance.
+\item \textbf{Black hole}: A stable channel for energy cascading from 3D into 2D, sustained by continuous matter inflow. If the matter supply is exhausted, the dimensional channel gradually dissipates \cite{hawking1974, chandrasekhar1983}.
+\item \textbf{White hole}: A channel injecting 4D energy into 3D space. The Big Bang singularity is a cosmic-scale white-hole event. Black holes and white holes are distinct channel types; there is no topological “black hole to white hole” connection.
+\item \textbf{Dark-matter effect}: Originates from residual 3D–2D transdimensional distortion tension left by ancient, now extinguished black holes. The residual gravitational potential decays with time and distance:
+\begin{equation}
+\Phi(r,t) = \Phi_0 \cdot \frac{e^{-t/\tau}}{r} \cdot e^{-r/r_d}
+\end{equation}
+where $\tau$ is the transdimensional tension relaxation time, and $r_d$ is the spatial decay scale of the tension. Dark-matter signals concentrate in regions where black holes once formed; cosmic voids carry weak residual tension and low dark-matter abundance \cite{rubin1980, bertone2005}.
 \end{itemize}
 
-The weak interaction is preliminarily identified as a metastable coupling dissociation effect at the dimensional interface; detailed dynamical description remains to be completed in future work.
+Equation (7) describes the gravitational potential from a single ancient black-hole remnant in 3D space. The total galactic potential is the integral superposition of many independent remnant sources. Under the approximation of uniform remnant distribution and observation scale $r$ much smaller than the collective galactic decay scale $r_d^{\text{gal}}$, the total potential is approximately logarithmic (obtained by integrating the Poisson equation $\nabla^2\Phi=4\pi G\rho_{\text{eff}}$ for an isothermal distribution with $\rho_{\text{eff}}\propto 1/r^2$):
+\begin{equation*}
+\Phi_{\text{gal}}(r) \approx \Phi_c \ln\left(\frac{r}{r_c}\right) \tag{7b}
+\end{equation*}
+where $\Phi_c$ and $r_c$ are constants determined by remnant number density and single-source strength. A logarithmic potential yields rotation speeds satisfying $v^2 = r \, d\Phi_{\text{gal}}/dr \approx \Phi_c$, nearly constant across galactic scales, matching flat rotation-curve observations. The exponential cutoff $e^{-r/r_d}$ in (7) describes the eventual decline of rotation curves in the outer galactic regions as tension decays with distance. The timescale $\tau$ in $e^{-t/\tau}$ must be much longer than the age of the universe so that remnants barely decay over cosmic time, consistent with high-redshift dark-matter observations. Small temporal evolution differences between remnants of different ages provide a further testable direction.
+
+Regarding the boundary of the dimensional ladder: this programme treats 3D space as the lowest stable layer where energy can accumulate into matter. 2D and lower dimensions exist only as transient deformation, residual tension or channel cross-sections and cannot stably host accumulated matter. Sustained cascading into 2D requires extremely high mass inflow to maintain the channel (e.g., black holes); the channel dissipates once inflow stops. Therefore the dimensional ladder terminates at 3D, with no stable “2D matter” or “1D matter”.
+
+The weak interaction is provisionally conjectured as metastable dissociation of transdimensional interfacial coupling. Its corresponding phenomenological potential, decay channels and parity-violating features are primary modelling targets for future work, and no quantitative form is given here \cite{weinberg1967, wilczek2004}.
 
 \section{Transdimensional Projection Interpretation of Quantum Phenomena}
-\subsection{Origin of Apparent Randomness: Time-Domain Undersampling Aliasing}
-The full ontology of a quantum object resides in higher-dimensional space, and its state evolution is a deterministic, continuous temporal process with no intrinsic randomness.
+\subsection{Origin of Apparent Randomness: Temporal Aliasing from Undersampling}
+The full ontological quantum object resides in high-dimensional space. Its state evolution is deterministic and continuous in time, with no intrinsic probability.
 
-All observational means in the three-dimensional world, bounded by three-dimensional causality and signal speed, have an inherent minimum time slice—an upper limit on the observation sampling frequency $f_{\text{obs}}$. The intrinsic evolution frequency $f_d$ of the higher-dimensional ontology is far higher than the three-dimensional sampling frequency, satisfying the Nyquist undersampling condition:
+All measurement apparatus in the 3D world are bounded by 3D causality and signal speed, possessing an inherent minimum time slice, meaning the observation sampling frequency $f_{\text{obs}}$ is capped.
+
+\textbf{Remark}: Temporal aliasing here is an ontological analogy within this framework, not a direct copy of classical ADC signal processing. The 3D observation bandwidth limit arises from causal constraints set by the speed of light, not hardware instrument sampling rate.
+
+The intrinsic evolution frequency $f_d$ of the high-dimensional ontology is far higher than the 3D observation sampling frequency, satisfying the Nyquist undersampling condition:
 \begin{equation}
-f_{\text{obs}} < 2f_d
+f_{\text{obs}} < 2 f_d
 \end{equation}
+Under this condition, temporal aliasing occurs. Sampling phases misalign with the high-dimensional evolution phase, and measurement outcomes appear pseudorandom. The Heisenberg uncertainty principle is interpreted as an aliasing effect from insufficient observation bandwidth, rather than fundamental indeterminacy of the object itself \cite{shannon1949}. This picture contrasts with the complementarity principle in standard quantum interpretations \cite{zeilinger2000}.
 
-Under this condition, observation suffers from time-domain aliasing: the sampling phase is misaligned with the higher-dimensional evolution phase, and measurement results exhibit pseudo-random behavior. The quantum uncertainty principle is essentially a sampling aliasing effect caused by limited observation bandwidth, not an inherent indeterminacy of the object itself.
-
-Let $\omega_d$ be the angular frequency of higher-dimensional ontological evolution and $\omega_s$ the angular frequency of observation sampling. The apparent aliasing frequency after sampling is:
+Let $\omega_d$ be the angular frequency of the high-dimensional evolution and $\omega_s$ the sampling angular frequency. The apparent aliased frequency after sampling is:
 \begin{equation}
-\omega_{\text{app}} = \left|\omega_d - k\omega_s\right|
+\omega_{\text{app}} = |\omega_d - k\omega_s|
 \end{equation}
-
-where $k$ is the integer satisfying the aliasing condition. The apparent probability distribution of measurement results is determined by the phase average of the deterministic higher-dimensional trajectory over discrete sampling points:
+where $k$ is an integer satisfying the aliasing condition. The apparent probability distribution of measurement results is determined by the statistical average of the deterministic high-dimensional trajectory over discrete sampling phases:
 \begin{equation}
-P(x) = \frac{1}{T_s} \int_0^{T_s} \delta\left(x-x_d(t)\right) dt
+P(x) = \frac{1}{T_s} \int_0^{T_s} \delta(x - x_d(t)) dt
 \end{equation}
+where $T_s$ is the sampling period and $x_d(t)$ is the deterministic trajectory of the high-dimensional ontology.
 
-where $T_s$ is the sampling period and $x_d(t)$ is the deterministic evolution trajectory of the higher-dimensional ontology.
+Equation (10) gives the probability distribution for a single projection channel. For multi-channel experiments such as double-slit interference where multiple spatially separated projection paths exist, the observed probability must include phase factors and cross terms for the high-dimensional trajectories of each channel:
+\begin{equation*}
+P_{\text{multi}}(x) \propto \left| \sum_{j} A_j e^{i \phi_j(x)} \right|^2 \tag{10b}
+\end{equation*}
+Here $A_j$ is the amplitude of the $j$-th projection channel and $\phi_j(x)$ the accumulated phase of its high-dimensional trajectory at sampling position $x$. The cross term $2A_1 A_2 \cos(\phi_1 - \phi_2)$ produces interference fringes. For a single channel, (10b) reduces to the time average in (10). For multiple channels, phase correlations between high-dimensional trajectories manifest as interference patterns under finite-bandwidth sampling. This implies quantum interference is not intrinsic wave behaviour of the object, but an apparent feature arising from phase correlations among multiple projection channels of a high-dimensional ontology under limited-bandwidth sampling \cite{feynman1963, wheeler1983}.
 
-\subsection{Quantum Entanglement Mechanism: Correlated Projections of a Single Higher-Dimensional Entity}
-A core postulate of this program: there are no two separate entangled particles. The observed phenomenon of quantum entanglement corresponds to multiple spatially separated projections of one and the same higher-dimensional entity onto three-dimensional spacetime. Two projections that appear distant from a three-dimensional perspective share the same higher-dimensional ontological evolution sequence, so their states are inherently correlated. No superluminal signal needs to propagate through three-dimensional space, and thus three-dimensional light-speed causality is not violated.
+It is honestly noted that the phase-superposition form in (10b) borrows the probability-amplitude rule of quantum mechanics. The current framework has not rigorously derived the structure $A_j e^{i\phi_j(x)}$ from the sampling process of deterministic high-dimensional trajectories. This is the central unresolved gap in the quantum section. Equation (10b) is a phenomenological placeholder: if phase correlations exist across multiple projection channels, interference patterns should take this form. Its first-principles derivation is reserved for future work.
 
-This mechanism naturally evades the local hidden-variable constraint of Bell's inequality. The derivation of Bell's inequality presupposes that "two subsystems are local independent entities"; in this framework, the two projections are not independent entities, so the premise does not apply, and there is no contradiction with experimental observations of Bell inequality violation \cite{aspect1982}.
+\subsection{Mechanism of Quantum Entanglement: Multiple Projections of a Single High-Dimensional Object}
+A core postulate of this programme: there are not two independent entangled particles. The observed entanglement phenomenon corresponds to multiple spatially separated images projected into 3D spacetime from one single high-dimensional object. Two projections that appear far apart in 3D share the identical high-dimensional evolutionary timeline and are naturally correlated. No superluminal signal needs to travel through 3D space, so the 3D light-speed causal bound is preserved.
 
-\subsection{Verification Scheme}
-Precisely record the timestamp, measurement basis and measurement outcome for every observation in an entanglement experiment. Perform spectral analysis on the time-series dataset to search for a reproducible intrinsic frequency of higher-dimensional evolution that can predict subsequent measurement results. The existence of such a stable frequency would provide direct experimental support for this model.
+This mechanism naturally evades the local hidden-variable prerequisites of Bell’s inequality. Bell’s derivation assumes two subsystems are locally independent entities. Within this framework, the two projections are not independent entities, so the premise does not apply, and there is no conflict with Bell experiments that violate the inequality \cite{bell1964, aspect1982}.
 
-\section{Observable Predictions and Discriminative Tests}
-If this program could only explain known phenomena, it would remain a physical interpretation. To qualify as a testable physical theory, it must make unique predictions distinguishable from the standard model. This paper proposes three observable discriminative directions:
+It is worth noting that the strict statement of Bell’s theorem, even under superdeterminism, still requires measurement independence (free choice) between the measurement setting and hidden variables. In this framework, the measurement basis is chosen by the 3D observer and is operationally independent from the high-dimensional evolution timeline of the object under observation. No signal passes between the two projections through 3D space; the correlation originates in the unified high-dimensional ontology, consistent with 3D locality \cite{brassard2000, gill2014}.
 
-\subsection{Prediction 1: Periodic Modulation in High-Time-Resolution Quantum Measurements}
-Since quantum randomness originates from observation undersampling aliasing, as the time resolution of measurement improves and approaches the limit of the three-dimensional minimum time slice, the quantum statistical distribution will exhibit identifiable periodic modulation. In standard quantum mechanics, probability rules are independent of observation time resolution and no such effect exists. Detection of this modulation would provide direct experimental evidence for the framework.
+One subtle caveat: if the observer themselves are also projections of high-dimensional ontology, whether the “measurement choice” is strictly independent of high-dimensional evolution requires careful argumentation inside the framework. This paper adopts the operational stance that the observer’s basis selection behaves, at the 3D level, independently of the target object’s high-dimensional timeline. Deeper ontological justification is left for future work.
 
-\subsection{Prediction 2: Spatial Correlation Between Dark Matter Distribution and Ancient Black Hole Remnants}
-Because dark matter effects arise from transdimensional tension left by ancient black holes, dark matter density peaks should be positively correlated with regions of historical black hole formation. In large cosmic voids, dark matter abundance should be significantly lower than the uniform distribution predicted by the $\Lambda$CDM model. This prediction can be tested with next-generation weak gravitational lensing surveys and galaxy survey data.
+\subsection{Test Protocol}
+Record precise timestamps, measurement bases and outcomes for every run in entanglement experiments. Perform spectral searches over the time-series dataset to identify stable, repeatable intrinsic frequencies of the high-dimensional evolution that can predict future measurement results. Discovery of a stable intrinsic frequency would provide direct support for this model.
 
-\subsection{Prediction 3: Systematic Deviations in Early-Universe Element Abundance Fitting}
-Based on the crowding-drag matter-formation model, quantitative fits to primordial nucleosynthesis element abundances will show distinguishable systematic deviations from the standard $\Lambda$CDM model. This prediction can be verified via high-precision observations of primordial element abundances.
+\section{Observational Predictions and Discriminative Tests}
+If the programme only reproduces known phenomena, it remains an interpretation. It must deliver unique predictions distinct from the standard model to qualify as a testable physical theory. Three discriminative observational directions are proposed:
+
+\subsection{Prediction 1: Periodic modulation in high-time-resolution quantum measurements}
+Since quantum randomness arises from undersampling aliasing, as measurement time resolution increases and approaches the fundamental 3D time-slice limit, quantum statistical distributions will develop identifiable periodic modulation signatures.
+Standard quantum mechanics predicts probability rules independent of measurement time resolution and contains no such effect. Observation of this modulation would supply direct experimental evidence for this framework.
+
+\subsection{Prediction 2: Correlation between dark-matter distribution and ancient black-hole relics}
+Because dark-matter effects originate from residual tension left by ancient black holes, dark-matter density peaks should correlate positively with regions where black holes formed abundantly in cosmic history. Dark-matter abundance in large cosmic voids should be significantly lower than the uniform-distribution expectation of $\Lambda$CDM.
+This prediction can be tested with next-generation weak-lensing and galaxy redshift surveys \cite{kaiser1992, des2021}.
+
+\subsection{Prediction 3: Systematic deviations in early cosmic element abundances}
+The crowding-retardation matter-formation model yields quantitatively distinguishable predictions for primordial nucleosynthesis element abundances compared with standard $\Lambda$CDM. This can be discriminated using high-precision primordial abundance measurements \cite{burbidge1957, coc2015}.
 
 \section{Discussion and Outlook}
 \subsection{Strengths of the Framework}
 \begin{enumerate}
-    \item \textbf{Minimal axioms, unified narrative}: With only four basic axioms, it connects cosmic origin, mass-energy conversion, fundamental interactions, quantum phenomena and dark matter effects, without introducing numerous independent ad hoc assumptions.
-    \item \textbf{Resolution of classical paradoxes}: It explains the mass-energy conversion process at the underlying dynamical level, and resolves the tension between entanglement nonlocality and light-speed causality via the projection mechanism, rather than setting them aside by demarcating domains of applicability.
-    \item \textbf{Compatibility with existing physics}: It does not deny the computational accuracy of relativity, quantum mechanics and $\Lambda$CDM within their respective domains, and regards them as effective approximations of this framework under specific conditions.
+\item \textbf{Minimal axioms, unified narrative}: Only four foundational axioms connect cosmic origin, mass–energy conversion, fundamental interactions, quantum phenomena and dark-matter effects, without many separate ad-hoc postulates.
+\item \textbf{Resolution of classical paradoxes}: It supplies a dynamical underlying account for mass–energy conversion and resolves the tension between entanglement nonlocality and light-speed causality via the projection mechanism, rather than setting the conflict aside by declaring domain boundaries.
+\item \textbf{Compatibility with existing physics}: It does not invalidate the computational accuracy of relativity, quantum mechanics or $\Lambda$CDM within their domains; these are treated as effective approximations under specific limits of this framework.
 \end{enumerate}
 
 \subsection{Limitations and Future Work}
-This study currently stands at the stage of an ontological program. A complete and unified system of quantitative dynamical equations has not yet been established, and much work remains before it can be considered a mature physical theory:
+This research remains at the stage of an ontological programme. A complete system of quantitative dynamical equations is not yet established, and substantial work remains before it becomes a mature physical theory:
 \begin{enumerate}
-    \item Construct a unified transdimensional geometric-temporal differential equation system for a unified mathematical description of all four fundamental interactions.
-    \item Rigorously distinguish intrinsic descent velocity from three-dimensional macroscopic velocity, and establish transformation rules compatible with experimentally verified Lorentz transformations.
-    \item Refine the quantitative model of early cosmic inflation and element abundances, and perform fitting comparisons with CMB observational data.
-    \item Design high-time-resolution quantum experiments to test the periodic modulation prediction.
+\item Construct unified transdimensional geometric–temporal differential equations for a single mathematical description of all four interactions.
+\item Rigorously separate the intrinsic cascade velocity from 3D macroscopic coordinate velocity and establish transformation rules compatible with experimental Lorentz invariance.
+\item Refine quantitative models of early inflation and element abundances, and perform fitting against CMB observational data.
+\item Design high-time-resolution quantum experiments to test the periodic-modulation prediction.
 \end{enumerate}
 
-\subsection{Boundary in Philosophy of Science}
-Even if quantitative modeling is completed and some observational tests are passed in the future, experimental data alone cannot "prove" that the higher-dimensional descent picture is the objective truth of the universe. The problem of theoretical equivalence in philosophy of science holds that multiple fundamentally different underlying models can yield identical observational predictions. The core role of experiment is falsification, not exclusive confirmation of any single ontological picture. The core value of this program is to provide a unified cosmic picture with fewer contradictions, fewer assumptions and greater coherence, offering an alternative path for fundamental physics research distinct from the mainstream paradigm.
+This version is an open discussion draft (v0.1 revised). Some equations are phenomenological placeholders; parameters and asymptotic behaviour will be refined in future revisions. Updates and discussion materials are maintained in the open-source repository, with versioned DOI and repository links tracked on Zenodo.
+
+\subsection{Structural Known Gaps in the Framework}
+Beyond the concrete tasks listed above, two structural gaps require long-term attention to avoid misinterpretation:
+\begin{enumerate}
+\item \textbf{Carrier objects for gauge structure}: The framework currently describes interactions using scalar “interfacial deformation” and transdimensional tension. It has not yet introduced mathematical objects capable of hosting non-Abelian fibre-bundle gauge structures for the $SU(3)\times SU(2)\times U(1)$ Standard Model gauge group. While the channel picture qualitatively orders force strengths, the running and unification of gauge couplings remain unrepresented.
+\item \textbf{Gap between sampling mechanism and Hilbert-space linearity}: Equation (10b) adopts probability-amplitude superposition, but the framework has not derived the linear Hilbert-space structure and noncommuting operators from the sampling of deterministic high-dimensional trajectories. This is the critical bottleneck determining whether the “quantum randomness from aliasing” picture can succeed.
+\end{enumerate}
+
+\subsection{Philosophical Boundary of the Science}
+Even after quantitative modelling and partial observational validation, experimental data alone cannot “prove” that the high-dimensional cascade picture is the objective truth of the universe. Theoretical equivalence is a well-known problem in philosophy of science: multiple ontologically distinct models may produce identical observational predictions. The role of experiment is primarily falsification, not unique confirmation of a single ontology.
+
+The core value of this programme is to provide an alternative ontological picture with fewer independent ad-hoc assumptions and internal narrative coherence, offering a separate path for fundamental physics research outside the mainstream paradigm \cite{popper1959, kuhn1962}.
+
+\vspace{1em}
+\noindent \textbf{Copyright Statement}: This work is released under a CC BY 4.0 licence. Users may share and adapt the work, provided the original author and source are credited.
 
 \begin{thebibliography}{99}
-\bibitem{planck2018}
-Planck Collaboration. Planck 2018 results. VI. Cosmological parameters[J]. \textit{Astronomy \& Astrophysics}, 2020, 641: A6.
-
-\bibitem{oerter2006}
-Oerter R. \textit{The Theory of Almost Everything: The Standard Model, the Unsung Triumph of Modern Physics}[M]. Penguin, 2006.
-
-\bibitem{weinberg1972}
-Weinberg S. \textit{Gravitation and Cosmology: Principles and Applications of the General Theory of Relativity}[M]. New York: Wiley, 1972.
-
-\bibitem{bell1964}
-Bell J S. On the Einstein Podolsky Rosen paradox[J]. \textit{Physics Physique Fizika}, 1964, 1(3): 195–200.
-
-\bibitem{aspect1982}
-Aspect A, Dalibard J, Roger G. Experimental test of Bell’s inequalities using time-varying analyzers[J]. \textit{Physical Review Letters}, 1982, 49(25): 1804–1807.
+\bibitem{planck2018} Planck Collaboration. Planck 2018 results. VI. Cosmological parameters[J]. Astronomy \& Astrophysics, 2020, 641: A6.
+\bibitem{oerter2006} Oerter R. The Theory of Almost Everything: The Standard Model, the Unsung Triumph of Modern Physics[M]. Penguin Books, 2006.
+\bibitem{weinberg1972} Weinberg S. Gravitation and Cosmology: Principles and Applications of the General Theory of Relativity[M]. Wiley, 1972.
+\bibitem{rovelli2004} Rovelli C. Quantum Gravity[M]. Cambridge University Press, 2004.
+\bibitem{peebles1993} Peebles P J E. Principles of Physical Cosmology[M]. Princeton University Press, 1993.
+\bibitem{bell1964} Bell J S. On the Einstein Podolsky Rosen paradox[J]. Physics Physique Fizika, 1964, 1(3): 195-200.
+\bibitem{zeilinger2010} Zeilinger A. Dance of the Photons: From Einstein to Quantum Teleportation[M]. Farrar, Straus and Giroux, 2010.
+\bibitem{smolin2006} Smolin L. The Trouble with Physics: The Rise of String Theory, the Fall of a Science, and What Comes Next[M]. Houghton Mifflin Harcourt, 2006.
+\bibitem{witten1995} Witten E. String theory dynamics in various dimensions[J]. Nuclear Physics B, 1995, 443(1): 85-126.
+\bibitem{landau1980} Landau L D, Lifshitz E M. Statistical Physics Part 1[M]. Pergamon Press, 1980.
+\bibitem{noether1918} Noether E. Invariante Variationsprobleme[J]. Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse, 1918: 235–257.
+\bibitem{friedmann1922} Friedmann A. Über die Krümmung des Raumes[J]. Zeitschrift für Physik, 1922, 10(1): 377–386.
+\bibitem{hubble1929} Hubble E P. A relation between distance and radial velocity among extra-galactic nebulae[J]. Proceedings of the National Academy of Sciences, 1929, 15(3): 168–173.
+\bibitem{guth1981} Guth A H. Inflationary universe: A possible solution to the horizon and flatness problems[J]. Physical Review D, 1981, 23(2): 347–356.
+\bibitem{linde1982} Linde A D. A new inflationary universe scenario: A possible solution of the horizon, flatness, homogeneity, isotropy and primordial monopole problems[J]. Physics Letters B, 1982, 108(6): 389–393.
+\bibitem{penzias1965} Penzias A A, Wilson R W. A measurement of excess antenna temperature at 4080 Mc/s[J]. The Astrophysical Journal, 1965, 142: 419–421.
+\bibitem{smoot1992} Smoot G F, et al. Structure in the COBE differential microwave radiometer first-year maps[J]. The Astrophysical Journal Letters, 1992, 396(1): L1–L5.
+\bibitem{komatsu2011} Komatsu E, et al. Seven-year Wilkinson Microwave Anisotropy Probe (WMAP) observations: cosmological interpretation[J]. The Astrophysical Journal Supplement Series, 2011, 192(2): 18.
+\bibitem{griffiths} Griffiths D J. Introduction to Elementary Particles[M]. Wiley-VCH, 2008.
+\bibitem{perkins} Perkins D H. Introduction to High Energy Physics[M]. Cambridge University Press, 2000.
+\bibitem{chandrasekhar1965} Chandrasekhar S. The Mathematical Theory of Black Holes[M]. Oxford University Press, 1983.
+\bibitem{jackson1998} Jackson J D. Classical Electrodynamics[M]. Wiley, 1998.
+\bibitem{yukawa1935} Yukawa H. On the interaction of elementary particles[J]. Proceedings of the Physico-Mathematical Society of Japan, 1935, 17: 48–57.
+\bibitem{halzen1984} Halzen F, Martin A D. Quarks and Leptons: An Introductory Course in Modern Particle Physics[M]. Wiley, 1984.
+\bibitem{hawking1974} Hawking S W. Black hole explosions?[J]. Nature, 1974, 248(5443): 30–31.
+\bibitem{rubin1980} Rubin V C, Ford W K, Thonnard N. Rotation of the Andromeda Nebula from a spectroscopic survey of emission regions[J]. The Astrophysical Journal, 1980, 238: 471–487.
+\bibitem{bertone2005} Bertone G, Hooper D, Silk J. Particle dark matter: evidence, candidates and constraints[J]. Physics Reports, 2005, 405(5-6): 279–390.
+\bibitem{weinberg1967} Weinberg S. A model of leptons[J]. Physical Review Letters, 1967, 19(21): 1264–1266.
+\bibitem{wilczek2004} Wilczek F. Origin of mass[J]. Proceedings of the National Academy of Sciences, 2004, 101(23): 8403–8410.
+\bibitem{shannon1949} Shannon C E. Communication in the presence of noise[J]. Proceedings of the IRE, 1949, 37(1): 10–21.
+\bibitem{zeilinger2000} Zeilinger A. The principle of complementarity in quantum physics[J]. Reviews of Modern Physics, 2000, 72(2): 288–305.
+\bibitem{feynman1963} Feynman R P, Leighton R B, Sands M. The Feynman Lectures on Physics[M]. Addison-Wesley, 1963.
+\bibitem{wheeler1983} Wheeler J A, Zurek W H. Quantum Theory and Measurement[M]. Princeton University Press, 1983.
+\bibitem{aspect1982} Aspect A, Dalibard J, Roger G. Experimental test of Bell's inequalities using time-varying analyzers[J]. Physical Review Letters, 1982, 49(25): 1804–1807.
+\bibitem{brassard2000} Brassard G, et al. A review of some aspects of Bell's theorem[J]. Foundations of Physics, 2000, 30(11): 1601–1623.
+\bibitem{gill2014} Gill R D. Bell's theorem: what it takes to prove it[J]. Statistical Science, 2014, 29(4): 512–528.
+\bibitem{kaiser1992} Kaiser N. Weak gravitational lensing[J]. Annual Review of Astronomy and Astrophysics, 1992, 30: 311–348.
+\bibitem{des2021} DES Collaboration. Dark Energy Survey Year 3 results: Cosmological constraints from weak lensing and galaxy clustering[J]. Physical Review D, 2021, 104(12): 123529.
+\bibitem{burbidge1957} Burbidge E M, Burbidge G R, Fowler W A, Hoyle F. Synthesis of the elements in stars[J]. Reviews of Modern Physics, 1957, 29(4): 547–650.
+\bibitem{coc2015} Coc A, Vangioni E. Primordial nucleosynthesis[J]. International Journal of Modern Physics E, 2015, 24(08): 1530008.
+\bibitem{popper1959} Popper K R. The Logic of Scientific Discovery[M]. Routledge, 1959.
+\bibitem{kuhn1962} Kuhn T S. The Structure of Scientific Revolutions[M]. University of Chicago Press, 1962.
 \end{thebibliography}
 
 \end{document}
