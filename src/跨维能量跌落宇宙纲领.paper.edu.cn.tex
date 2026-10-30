@@ -1,47 +1,49 @@
-\documentclass[12pt,a4paper]{ctexart}
-\usepackage{amsmath,amssymb,geometry}
-\usepackage{graphicx}
-\usepackage{cite}
-\usepackage{hyperref}
-\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
-\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
-\linespread{1.5}
+\documentclass[UTF8]{csoarticle}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{引理}
+\renewcommand{\proofname}{证明}
 
-\title{跨维能量跌落宇宙纲领：基于维度界面动力学的统一宇宙学框架}
-\author{董毅 \\ 济南立心数字科技有限公司}
-\date{}
+%========== 论文头部元数据 csoarticle专用命令 ==========
+\titleCHN{跨维能量跌落宇宙纲领：基于维度界面动力学的统一宇宙学框架}
+\titleENG{Trans‑dimensional Energy Descent Cosmology Program: A Unified Cosmological Framework Based on Dimensional‑Interface Dynamics}
+
+\authorCHN{董毅\affil{1}}
+\authorENG{DONG Yi\affil{1}}
+
+\affiliationCHN{
+    \affil{1} 济南立心数字科技有限公司，济南　250000
+}
+\affiliationENG{
+    \affil{1} Jinan Lixin Digital Technology Co., Ltd., Jinan 250000, China
+}
+
+\abstractCHN{针对$\Lambda$CDM宇宙学模型与粒子物理标准模型存在的底层矛盾，本文提出一套基于高维能量跨维跌落与维度界面张力的统一宇宙学研究纲领。以4条基础公理为出发点，将光速定义为高维能量向三维空间跌落的本征界面速度，把质量解释为跌落能量受三维空间碰撞阻滞后的稳态效应，给出质能关系的动力学诠释。将宇宙大爆炸解释为四维向三维喷射能量的白洞通道，用能量拥挤阻滞机制解释宇宙早期物质生成与暴涨现象；把引力、电磁力、核力理解为跨维张力在不同尺度下的派生效应；利用高维客体三维投影模型解释量子表观随机性与量子纠缠效应。文中给出一阶唯象动力学方程组以及三项可观测判别预言。本纲领属于本体论层面理论探索框架，兼容现有物理理论的适用域，以更少特设假设打通微观、宏观与宇宙尺度物理图像，可为后续定量建模与实验检验提供新思路。本版本为开放讨论稿，部分方程为现象学占位形式。}
+
+\abstractENG{Aiming at the underlying contradictions between the $\Lambda$CDM cosmological model and the Standard Model of particle physics, this paper proposes a unified cosmological research program based on trans‑dimensional energy descent and dimensional‑interface tension. Starting from four fundamental axioms, the speed of light is defined as the intrinsic interface velocity of high‑dimensional energy descending into 3‑dimensional space, and mass is interpreted as the steady‑state effect of descending energy blocked by collisions in 3‑dimensional space, providing a dynamical interpretation for the mass‑energy relation. The Big Bang is explained as a white‑hole channel ejecting energy from four‑dimensional into three‑dimensional space; the early‑universe matter generation and inflation are accounted for by energy crowding‑blocking mechanism. Gravitation, electromagnetic force and nuclear force are regarded as derivative effects of trans‑dimensional tension at different scales. A high‑dimensional‑object projection model is adopted to interpret apparent quantum randomness and quantum entanglement. First‑order phenomenological dynamical equations and three testable observational predictions are presented. As an ontological theoretical‑exploration framework compatible with existing physics within their valid domains, this program connects micro‑, macro‑ and cosmological‑scale physical pictures with fewer ad‑hoc assumptions, offering new clues for subsequent quantitative modeling and experimental verification. This is an open discussion draft with partial phenomenological placeholder equations.}
+
+\keywordCHN{宇宙学；跨维动力学；宇宙起源；质能转换；量子纠缠；暗物质效应；维度界面张力}
+\keywordENG{cosmology; trans‑dimensional dynamics; origin of universe; mass‑energy conversion; quantum entanglement; dark‑matter effect; dimensional‑interface tension}
+
+\cateidCHN{P159}  %中图分类号：P159 宇宙学
+
+\authorIntroduction{董毅，主要研究方向：基础物理理论、宇宙学理论建模。}
+\fund{}  %无基金则留空
 
 \begin{document}
 \maketitle
 
-\begin{abstract}
-当前主流宇宙学与粒子物理采用分域有效理论框架：$\Lambda$CDM模型成功描述宇宙大尺度演化，但暗物质、暗能量的物理本质尚不明确，奇点与早期暴涨的底层机制缺失；粒子物理标准模型统一了三种微观相互作用，却无法纳入引力，且质能转换的本体动力学机制长期留白。广义相对论与量子力学在普朗克尺度下存在不可调和的矛盾，前沿量子引力方案引入多个独立假设，长期缺乏可直接检验的排他性观测预言。
-
-本文提出一套基于高维能量跨维跌落与维度界面张力的统一宇宙学研究纲领。该纲领以4条基础公理为起点，将光速$c$定义为高维能量向三维空间跌落的本征界面速度；在本框架中，质量并非粒子的内禀静态属性，而是跌落能量受三维空间拥挤碰撞、交互作用阻滞，跌落本征速度衰减后的稳态表现，由此为质能关系式$E=mc^2$提供连续的动力学过程诠释。
-
-在此框架下，宇宙大爆炸奇点对应四维向三维喷射能量的白洞通道：早期极小空间内能量密度超过三维承载饱和阈值，能量单元高度拥挤碰撞、跌落速度急剧衰减，在极短时间内批量生成物质，对应宇宙暴涨过程；未发生碰撞阻滞的自由跌落能量维持光速传播，形成宇宙微波背景辐射。引力、电磁力、核力均被解释为不同维度界面间跨维张力在不同尺度下的派生效应；量子表观随机性来源于三维观测带宽限制导致的时域欠采样混叠，量子纠缠则对应单一高维客体在三维空间的多处投影关联，天然规避局域隐变量与超光速因果悖论。
-
-本文同时给出多项可观测检验预言与全套一阶唯象动力学方程，为后续定量验证与判别实验提供方向。本纲领属于本体论层面的统一研究框架，不否定现有物理理论在其适用域内的计算有效性，旨在以更少独立特设假设，贯通微观、宏观与宇宙尺度的物理图像。
-
-本纲领当前版本为开放讨论稿（v0.1 revised），部分方程为现象学占位形式，其参数取值与极限行为将在后续版本中逐步修正；后续修订与讨论材料将通过开源仓库同步发布：
-\url{https://github.com/nell332/transdimensional-cosmology-program.git}，版本记录托管于Zenodo：
-\url{https://doi.org/10.5281/zenodo.23765255}。
-
-\textbf{关键词}：跨维动力学；宇宙起源；质能转换；量子纠缠；暗物质效应；维度界面张力
-\end{abstract}
-
 \section{引言}
 \subsection{研究背景与现存问题}
-过去半个世纪，宇宙学与粒子物理取得了里程碑式进展：$\Lambda$CDM宇宙学模型通过普朗克卫星对宇宙微波背景辐射的高精度观测，精准拟合了宇宙大尺度结构演化\cite{planck2018}；粒子物理标准模型成功统一描述电磁、强、弱三种基本相互作用，其预言的粒子均得到实验验证\cite{oerter2006}。
+过去半个世纪，宇宙学与粒子物理取得了里程碑式进展：$\Lambda$CDM宇宙学模型通过普朗克卫星对宇宙微波背景辐射的高精度观测，精准拟合了宇宙大尺度结构演化\upcite{planck2018}；粒子物理标准模型成功统一描述电磁、强、弱三种基本相互作用，其预言的粒子均得到实验验证\upcite{oerter2006}。
 
 然而，现有理论体系仍存在深层结构性局限：
 \begin{enumerate}
-\item \textbf{理论割裂}：广义相对论描述宏观引力，量子力学描述微观粒子，二者在普朗克尺度、黑洞奇点等场景下存在根本性冲突，量子引力问题至今未形成共识性方案\cite{weinberg1972, rovelli2004}。
-\item \textbf{独立参数较多}：为匹配观测数据，$\Lambda$CDM模型引入暗物质、暗能量、宇宙暴胀等组分，其微观起源与底层物理机制尚未得到第一性原理解释\cite{peebles1993}。
-\item \textbf{底层机制留白}：狭义相对论给出质能关系式$E=mc^2$，但并未解释质量与能量相互转换的动力学过程；量子力学的测量问题、纠缠非局域性，长期存在多种诠释并存的局面，缺乏统一的本体论图像\cite{bell1964, zeilinger2010}。
+\item \textbf{理论割裂}：广义相对论描述宏观引力，量子力学描述微观粒子，二者在普朗克尺度、黑洞奇点等场景下存在根本性冲突，量子引力问题至今未形成共识性方案\upcite{weinberg1972, rovelli2004}。
+\item \textbf{独立参数较多}：为匹配观测数据，$\Lambda$CDM模型引入暗物质、暗能量、宇宙暴胀等组分，其微观起源与底层物理机制尚未得到第一性原理解释\upcite{peebles1993}。
+\item \textbf{底层机制留白}：狭义相对论给出质能关系式$E=mc^2$，但并未解释质量与能量相互转换的动力学过程；量子力学的测量问题、纠缠非局域性，长期存在多种诠释并存的局面，缺乏统一的本体论图像\upcite{bell1964, zeilinger2010}。
 \end{enumerate}
 
-以弦理论为代表的部分前沿量子引力方案，走向了以数学自洽性与对称性为核心的研究路径，引入额外维度、超对称、紧致化等大量结构，但始终难以提出可被现有实验与观测手段检验的排他性预言，其物理实在性长期受到学界讨论\cite{smolin2006, witten1995}。
+以弦理论为代表的部分前沿量子引力方案，走向了以数学自洽性与对称性为核心的研究路径，引入额外维度、超对称、紧致化等大量结构，但始终难以提出可被现有实验与观测手段检验的排他性预言，其物理实在性长期受到学界讨论\upcite{smolin2006, witten1995}。
 
 \subsection{本文研究思路}
 本文不采用“在现有标准模型上追加修正项”的常规路径，而是尝试构建一套公理极简的底层动力学框架：以高维能量跨维迁移、跌落、阻滞为核心机制，将引力、微观相互作用、质能转换、量子效应、宇宙起源、暗物质效应全部纳入同一套本体论图像。
@@ -59,7 +61,7 @@
 
 \subsection{基础公理}
 \noindent\textbf{公理1 时间正向性与熵增原理}\\
-时间具备正向不可逆性，熵增是能量与物质转化过程的底层约束；违背时间正向性与熵增的演化模式，无法在本宇宙稳定存续\cite{landau1980}。
+时间具备正向不可逆性，熵增是能量与物质转化过程的底层约束；违背时间正向性与熵增的演化模式，无法在本宇宙稳定存续\upcite{landau1980}。
 
 \noindent\textbf{公理2 分层维度与跨维迁移}\\
 宇宙具备分层维度结构；高维空间不受三维空间的做功约束限制；能量可发生跨维度迁移、跌落；由高维向低维跌落存在固有的本征界面速度；维度通道的生成与维持，需满足对应的能量耦合条件。
@@ -68,7 +70,7 @@
 三维空间单位体积存在可承载高维跌落能量的饱和能量密度上限$\rho_{\text{sat}}$；当局域能量密度超过该阈值时，能量单元之间会发生拥挤、碰撞、互相阻滞。单个能量单元携带固定本征能量$\varepsilon_0$，满足数密度与能量密度关系$\rho = n \varepsilon_0$，其中$n$为能量单元数密度。
 
 \noindent\textbf{公理4 全域能量守恒}\\
-宇宙全域总能量守恒；能量不会凭空创生或湮灭，仅在不同形态、不同维度耦合状态之间转换\cite{noether1918}。
+宇宙全域总能量守恒；能量不会凭空创生或湮灭，仅在不同形态、不同维度耦合状态之间转换\upcite{noether1918}。
 
 \subsection{核心物理量定义与跌落动力学方程组}
 定义\textbf{跌落本征速度}$v_d$：高维原生能量向三维空间跌落的界面固有参数。
@@ -114,7 +116,7 @@ m(v_d) = m_0 \sqrt{1 - \frac{v_d^2}{c^2}}
 \begin{equation}
 \frac{dn_m}{dt} = k \cdot n^2 \cdot \left( 1 - \frac{n_{\text{sat}}}{n} \right) \cdot H(t)^{-1}
 \end{equation}
-其中$k$为碰撞固化效率系数，$H(t)$为哈勃参数，描述空间膨胀的稀释效应\cite{friedmann1922, hubble1929}。
+其中$k$为碰撞固化效率系数，$H(t)$为哈勃参数，描述空间膨胀的稀释效应\upcite{friedmann1922, hubble1929}。
 
 式(4)中$H(t)^{-1}$项刻画的是早期高密度阶段空间膨胀尚未充分稀释能量时的生成增强效应，其适用域为$n \gg n_{\text{sat}}$且$H(t)$不为零的早期宇宙。当$H(t) \to 0$（静态或极端减速极限）时，该唯象形式需替换为正则化形式：
 \begin{equation*}
@@ -127,31 +129,31 @@ m(v_d) = m_0 \sqrt{1 - \frac{v_d^2}{c^2}}
 
 该机制直接解释了为何宇宙物质主要形成于极早期，而现代宇宙不再大规模新生物质：空间膨胀稀释了能量密度，拥挤碰撞的固化条件不再满足。
 
-关于视界问题，本框架给出如下定性图像：早期宇宙在物质批量生成之前，三维空间各区域通过高维本体的统一演化时序保持跨维连通；白洞注入的高通量能量在极短时间内使可观测宇宙各区域共享同一套高维演化相位，从而为CMB的大尺度均匀性提供因果基础。定量的因果连通性分析需要建立跨维几何的度规演化方程，留待后续工作\cite{guth1981, linde1982}。
+关于视界问题，本框架给出如下定性图像：早期宇宙在物质批量生成之前，三维空间各区域通过高维本体的统一演化时序保持跨维连通；白洞注入的高通量能量在极短时间内使可观测宇宙各区域共享同一套高维演化相位，从而为CMB的大尺度均匀性提供因果基础。定量的因果连通性分析需要建立跨维几何的度规演化方程，留待后续工作\upcite{guth1981, linde1982}。
 
 \subsection{宇宙微波背景辐射的起源}
-并非所有白洞喷涌的能量都参与了拥挤碰撞与质量生成。一部分能量单元在喷射后未发生有效碰撞耦合，跌落本征速度始终维持在$c$附近，不衰减、不固化、不产生静质量。这部分自由传播的原始跌落能量，就是当前观测到的宇宙微波背景辐射（CMB）\cite{penzias1965, smoot1992}。
+并非所有白洞喷涌的能量都参与了拥挤碰撞与质量生成。一部分能量单元在喷射后未发生有效碰撞耦合，跌落本征速度始终维持在$c$附近，不衰减、不固化、不产生静质量。这部分自由传播的原始跌落能量，就是当前观测到的宇宙微波背景辐射（CMB）\upcite{penzias1965, smoot1992}。
 
 该机制回答了宇宙学经典疑问：为何大爆炸残留的辐射历经百亿年仍以近光速传播，未转化为物质——其本质是未受阻滞的纯跌落态能量，不满足质量生成的碰撞耦合条件。
 
-关于CMB的黑体谱特征，本框架给出定性说明：自由下降能量在三维空间中传播时，空间膨胀使其波长同步拉长、能量密度稀释，形成连续红移谱。早期宇宙中自由下降能量与已固化物质之间存在微弱跨维耦合，在复合时期之前足以使二者达到统计平衡，赋予自由下降能量黑体谱形式；复合后耦合中断，自由下降能量以近似黑体谱自由传播至今。此外，高维原生能量注入三维空间时的统计分布本身即具有接近热谱的特征，这与白洞通道注入高通量能量的设定一致；严格的谱形推导留待后续定量工作\cite{planck2018, komatsu2011}。
+关于CMB的黑体谱特征，本框架给出定性说明：自由下降能量在三维空间中传播时，空间膨胀使其波长同步拉长、能量密度稀释，形成连续红移谱。早期宇宙中自由下降能量与已固化物质之间存在微弱跨维耦合，在复合时期之前足以使二者达到统计平衡，赋予自由下降能量黑体谱形式；复合后耦合中断，自由下降能量以近似黑体谱自由传播至今。此外，高维原生能量注入三维空间时的统计分布本身即具有接近热谱的特征，这与白洞通道注入高通量能量的设定一致；严格的谱形推导留待后续定量工作\upcite{planck2018, komatsu2011}。
 
 需要明示，上述热化机制引入了“自由下降能量与已固化物质之间存在微弱跨维耦合”这一额外假设，该假设不在四条基础公理之列，属于当前框架的开放问题；下一版将尝试从公理2的“维度通道耦合条件”中导出该耦合的强度与形式。
 
 \section{基本相互作用的统一解释：同源的跨维张力效应}
 本纲领认为，四种基本相互作用并非彼此独立的基础力，而是维度界面之间跨维张力在不同维度组合、不同空间尺度下的派生表现。
 
-四种相互作用的强度差异，在本框架中对应不同维度界面组合的通道宽度与贴合紧密度差异。引力对应3D→2D通道，通道截面极窄、泄漏率低，只有大质量聚集才能拽出可观测形变，因此在四种力中最弱；核力对应4D‑3D界面在极短距离内的紧密贴合，张力直接作用、无中间稀释，因此在微观尺度上最强；电磁力对应4D→3D跃迁张力，强度居中，且因涉及电荷符号而呈现吸引与排斥两种极性。这一量级叙事为四种力的强度排序提供统一通道图像，定量强度比计算留待后续工作\cite{griffiths, perkins}。
+四种相互作用的强度差异，在本框架中对应不同维度界面组合的通道宽度与贴合紧密度差异。引力对应3D→2D通道，通道截面极窄、泄漏率低，只有大质量聚集才能拽出可观测形变，因此在四种力中最弱；核力对应4D‑3D界面在极短距离内的紧密贴合，张力直接作用、无中间稀释，因此在微观尺度上最强；电磁力对应4D→3D跃迁张力，强度居中，且因涉及电荷符号而呈现吸引与排斥两种极性。这一量级叙事为四种力的强度排序提供统一通道图像，定量强度比计算留待后续工作\upcite{griffiths, perkins}。
 
 \subsection{引力：三维‑二维跨维跌落张力}
 引力是三维能量向二维空间跌落造成的空间扭曲效应。定义空间形变量$\varepsilon$，其与局域静质量密度$\rho_m$满足泊松型唯象方程：
 \begin{equation}
 \nabla^2 \varepsilon = 4\pi G_\perp \rho_m
 \end{equation}
-其中$G_\perp$为跨维张力系数。形变量$\varepsilon$与引力势$\Phi$满足线性映射$\Phi \propto \varepsilon$，弱场低速、小形变近似下，该式退化为牛顿引力泊松方程，与日常观测完全兼容\cite{chandrasekhar1965}。
+其中$G_\perp$为跨维张力系数。形变量$\varepsilon$与引力势$\Phi$满足线性映射$\Phi \propto \varepsilon$，弱场低速、小形变近似下，该式退化为牛顿引力泊松方程，与日常观测完全兼容\upcite{chandrasekhar1965}。
 
 \subsection{电磁力：四维‑三维跨维跃迁张力}
-电子属于未完全冻结的高维能量投影，天然存在向四维反向跃迁的趋势，形成反向跨维引力，对应异种电荷相互吸引；同时受三维空间能量饱和阈值约束，同类高能投影聚集时产生饱和排斥效应，对应同种电荷相互排斥\cite{jackson1998}。
+电子属于未完全冻结的高维能量投影，天然存在向四维反向跃迁的趋势，形成反向跨维引力，对应异种电荷相互吸引；同时受三维空间能量饱和阈值约束，同类高能投影聚集时产生饱和排斥效应，对应同种电荷相互排斥\upcite{jackson1998}。
 
 \subsection{核力：四维‑三维界面短程强耦合张力}
 核力是四维‑三维界面在极微观距离下的强耦合束缚张力，采用类汤川势形式描述其随距离的变化：
@@ -159,17 +161,17 @@ m(v_d) = m_0 \sqrt{1 - \frac{v_d^2}{c^2}}
 V(r) = -V_0 \cdot \frac{e^{-r/r_0}}{r/r_0}
 \end{equation}
 其中$r_0$为跨维耦合临界距离（约$10^{-15}\text{m}$量级），$V_0$为耦合势深度。
-当粒子间距小于临界尺度时，跨维投影界面紧密贴合，耦合条件成立，强束缚作用显现；粒子间距超过临界值后，跨维耦合指数衰减，作用力迅速消失，完美匹配核力“短程、强吸引、饱和性”的实验特征\cite{yukawa1935, halzen1984}。
+当粒子间距小于临界尺度时，跨维投影界面紧密贴合，耦合条件成立，强束缚作用显现；粒子间距超过临界值后，跨维耦合指数衰减，作用力迅速消失，完美匹配核力“短程、强吸引、饱和性”的实验特征\upcite{yukawa1935, halzen1984}。
 
 \subsection{黑洞、白洞与暗物质效应}
 \begin{itemize}
-\item \textbf{黑洞}：三维能量向二维跌落的稳定通道，依赖持续物质流入维持界面稳定；物质供给不足时，维度通道逐步消散\cite{hawking1974, chandrasekhar1983}。
+\item \textbf{黑洞}：三维能量向二维跌落的稳定通道，依赖持续物质流入维持界面稳定；物质供给不足时，维度通道逐步消散\upcite{hawking1974, chandrasekhar1983}。
 \item \textbf{白洞}：四维能量向三维注入的通道；大爆炸奇点为宇宙尺度的白洞事件。黑洞与白洞属于不同类型的维度通道，不存在“黑洞直通白洞”的拓扑结构。
 \item \textbf{暗物质效应}：来源于历史上已熄灭的古黑洞遗留的三维‑二维跨维扭曲张力。残留引力势随时间与空间距离满足衰减关系：
 \begin{equation}
 \Phi(r,t) = \Phi_0 \cdot \frac{e^{-t/\tau}}{r} \cdot e^{-r/r_d}
 \end{equation}
-其中$\tau$为跨维张力弛豫时间，$r_d$为张力空间衰减特征尺度。暗物质信号集中于曾形成黑洞的区域，宇宙空洞区域残留张力弱，暗物质丰度偏低\cite{rubin1980, bertone2005}。
+其中$\tau$为跨维张力弛豫时间，$r_d$为张力空间衰减特征尺度。暗物质信号集中于曾形成黑洞的区域，宇宙空洞区域残留张力弱，暗物质丰度偏低\upcite{rubin1980, bertone2005}。
 \end{itemize}
 
 式(7)描述单个古黑洞残迹源在三维空间留下的引力势。星系尺度上的总引力势由大量独立残迹源贡献积分叠加得到。在残迹源空间分布近似均匀、且观测尺度$r$远小于集体衰减尺度$r_d^{\text{gal}}$的条件下，总势近似为对数形式（该形式可由泊松方程$\nabla^2\Phi=4\pi G\rho_{\text{eff}}$在等效密度$\rho_{\text{eff}}\propto 1/r^2$的等温分布下积分得到）：
@@ -181,7 +183,7 @@ V(r) = -V_0 \cdot \frac{e^{-r/r_0}}{r/r_0}
 
 关于维度阶梯的边界，本纲领设定三维空间为能量能够稳定停留并积累为物质的最低维度层。二维及更低维度仅以瞬时形变、残迹张力或通道截面的形式存在，不具备稳定承载物质积累的条件；能量向二维的持续跌落需要极高密度的物质流入维持通道（如黑洞），一旦物质供给中断，通道即消散。因此维度阶梯在三维处“封底”，不存在稳定的“二维物质”或“一维物质”形态。
 
-弱相互作用暂仅定性猜想为跨维界面亚稳态耦合解离过程，其对应的唯象势、衰变通道与宇称破缺特征，是后续首要的建模目标，本文暂不给出定量形式\cite{weinberg1967, wilczek2004}。
+弱相互作用暂仅定性猜想为跨维界面亚稳态耦合解离过程，其对应的唯象势、衰变通道与宇称破缺特征，是后续首要的建模目标，本文暂不给出定量形式\upcite{weinberg1967, wilczek2004}。
 
 \section{量子现象的跨维投影诠释}
 \subsection{表观随机性的来源：时域欠采样混叠}
@@ -195,7 +197,7 @@ V(r) = -V_0 \cdot \frac{e^{-r/r_0}}{r/r_0}
 \begin{equation}
 f_{\text{obs}} < 2 f_d
 \end{equation}
-此时观测将发生时域混叠，采样相位与高维演化相位错位，观测结果呈现伪随机特征。量子不确定性原理，本质是观测带宽不足导致的采样混叠效应，而非客体本身状态不确定\cite{shannon1949}；这一图像与量子力学正统诠释中的互补性原理形成对照\cite{zeilinger2000}。
+此时观测将发生时域混叠，采样相位与高维演化相位错位，观测结果呈现伪随机特征。量子不确定性原理，本质是观测带宽不足导致的采样混叠效应，而非客体本身状态不确定\upcite{shannon1949}；这一图像与量子力学正统诠释中的互补性原理形成对照\upcite{zeilinger2000}。
 
 设高维本体演化角频率为$\omega_d$，观测采样角频率为$\omega_s$，则采样后的表观混叠频率为：
 \begin{equation}
@@ -212,16 +214,16 @@ P(x) = \frac{1}{T_s} \int_0^{T_s} \delta(x - x_d(t)) dt
 P_{\text{multi}}(x) \propto \left| \sum_{j} A_j e^{i \phi_j(x)} \right|^2
 \tag{10b}
 \end{equation*}
-其中$A_j$为第$j$个投影通道的振幅，$\phi_j(x)$为该通道高维轨迹在采样点$x$处的累积相位。交叉项$2A_1 A_2 \cos(\phi_1 - \phi_2)$对应干涉条纹。单通道情形下式(10b)退化为式(10)的经典时间平均；多通道情形下，高维轨迹的相位关联通过采样过程投射为三维空间中的干涉图样。这说明量子干涉并非来自客体内禀波动性，而是高维轨迹多投影通道之间相位关联在有限带宽采样下的表观显现\cite{feynman1963, wheeler1983}。
+其中$A_j$为第$j$个投影通道的振幅，$\phi_j(x)$为该通道高维轨迹在采样点$x$处的累积相位。交叉项$2A_1 A_2 \cos(\phi_1 - \phi_2)$对应干涉条纹。单通道情形下式(10b)退化为式(10)的经典时间平均；多通道情形下，高维轨迹的相位关联通过采样过程投射为三维空间中的干涉图样。这说明量子干涉并非来自客体内禀波动性，而是高维轨迹多投影通道之间相位关联在有限带宽采样下的表观显现\upcite{feynman1963, wheeler1983}。
 
 需要诚实说明，式(10b)的相位叠加形式本身借用了量子力学概率幅叠加规则；本框架当前尚未从高维确定性轨迹的采样过程严格导出$A_j e^{i\phi_j(x)}$的结构，这是量子部分最核心的未闭合环节。式(10b)在此作为“若多投影通道的相位关联存在，则干涉图样应取此形式”的现象学占位，其第一性推导留待后续工作。
 
 \subsection{量子纠缠机制：单一高维客体的多投影关联}
 本纲领的核心设定：不存在两个相互独立的纠缠粒子。量子纠缠观测现象，对应同一个高维客体在三维时空投射出多个空间分离的影像。三维视角下相距遥远的两个投影，共享同一套高维本体演化时序，状态天然关联；无需在三维空间内传递超光速信号，因此不破坏三维光速因果约束。
 
-该机制天然规避贝尔不等式的局域隐变量限制——贝尔不等式的推导前提为“两个子系统是局域独立实体”，而本框架中两个投影并非独立实体，因此不适用该前提约束，与贝尔实验违反不等式的观测结果不存在冲突\cite{bell1964, aspect1982}。
+该机制天然规避贝尔不等式的局域隐变量限制——贝尔不等式的推导前提为“两个子系统是局域独立实体”，而本框架中两个投影并非独立实体，因此不适用该前提约束，与贝尔实验违反不等式的观测结果不存在冲突\upcite{bell1964, aspect1982}。
 
-需要说明的是，贝尔定理的严格表述在允许超确定论的前提下仍要求测量选择独立于隐变量（free choice条件）。本框架中，测量基底由三维观测者选定，独立于高维本体的演化时序，满足该条件；两个投影之间不存在三维空间中的信号传递，不违背三维定域性，而是将关联起源置于高维本体的统一演化之中\cite{brassard2000, gill2014}。
+需要说明的是，贝尔定理的严格表述在允许超确定论的前提下仍要求测量选择独立于隐变量（free choice条件）。本框架中，测量基底由三维观测者选定，独立于高维本体的演化时序，满足该条件；两个投影之间不存在三维空间中的信号传递，不违背三维定域性，而是将关联起源置于高维本体的统一演化之中\upcite{brassard2000, gill2014}。
 
 需要指出，若观测者本身也是高维本体的投影，其“测量选择”是否严格独立于高维演化，是一个需要在框架内认真论证的问题；本文当前采取的操作性立场是：三维观测者选定测量基底的行为，在三维层面表现为独立于被观测客体的高维演化时序，free choice条件在此操作性意义上成立。更严格的本体论论证留待后续工作。
 
@@ -237,10 +239,10 @@ P_{\text{multi}}(x) \propto \left| \sum_{j} A_j e^{i \phi_j(x)} \right|^2
 
 \subsection{预言2 暗物质分布与古黑洞遗迹的空间相关性}
 暗物质效应来源于古黑洞遗留的跨维张力，因此暗物质密度峰值应与历史上黑洞形成的密集区域正相关；宇宙大尺度空洞区域，暗物质丰度应显著低于$\Lambda$CDM模型的均匀分布预期。
-该预言可通过下一代弱引力透镜巡天与星系巡天数据进行检验\cite{kaiser1992, des2021}。
+该预言可通过下一代弱引力透镜巡天与星系巡天数据进行检验\upcite{kaiser1992, des2021}。
 
 \subsection{预言3 早期宇宙元素丰度的拟合差异}
-基于拥挤阻滞生质模型，对原初核合成的元素丰度进行定量拟合，其结果与标准$\Lambda$CDM模型将存在可区分的系统偏差。该预言可通过高精度原初元素丰度观测进行判别\cite{burbidge1957, coc2015}。
+基于拥挤阻滞生质模型，对原初核合成的元素丰度进行定量拟合，其结果与标准$\Lambda$CDM模型将存在可区分的系统偏差。该预言可通过高精度原初元素丰度观测进行判别\upcite{burbidge1957, coc2015}。
 
 \section{讨论与展望}
 \subsection{框架优势}
@@ -270,7 +272,7 @@ P_{\text{multi}}(x) \propto \left| \sum_{j} A_j e^{i \phi_j(x)} \right|^2
 
 \subsection{科学哲学边界}
 即使未来完成定量建模并通过部分观测检验，也无法仅凭实验数据“证明”高维跌落图景为宇宙客观真相。科学哲学中存在理论等价性问题：多套底层完全不同的模型，可输出完全一致的观测预言；实验的核心作用是证伪，而非单独证实某一本体图景。
-本纲领的核心价值，在于提供一套具有更少独立特设假设、内在叙事统一的备选本体图像，为基础物理研究提供一条区别于主流范式的备选路径\cite{popper1959, kuhn1962}。
+本纲领的核心价值，在于提供一套具有更少独立特设假设、内在叙事统一的备选本体图像，为基础物理研究提供一条区别于主流范式的备选路径\upcite{popper1959, kuhn1962}。
 
 \vspace{1em}
 \noindent \textbf{版权声明：}本文采用 CC BY 4.0 许可协议。使用者可共享、改编本作品，使用时需要标注原作者与原始来源。
@@ -283,7 +285,7 @@ P_{\text{multi}}(x) \propto \left| \sum_{j} A_j e^{i \phi_j(x)} \right|^2
 \bibitem{peebles1993} Peebles P J E. Principles of Physical Cosmology[M]. Princeton University Press, 1993.
 \bibitem{bell1964} Bell J S. On the Einstein Podolsky Rosen paradox[J]. Physics Physique Fizika, 1964, 1(3): 195‑200.
 \bibitem{zeilinger2010} Zeilinger A. Dance of the Photons: From Einstein to Quantum Teleportation[M]. Farrar, Straus and Giroux, 2010.
-\bibitem{smolin2006} Smolin L. The Trouble with Physics: The Rise of String Theory, the Fall of a Science, and What Comes Next[M]. Houghton Mifflin Harcourt, 2006.
+\bibitem{smolin2006} Smolin L. The Trouble with Physics: The Rise of String Theory, the Fall of a Science[M]. Houghton Mifflin Harcourt, 2006.
 \bibitem{witten1995} Witten E. String theory dynamics in various dimensions[J]. Nuclear Physics B, 1995, 443(1): 85‑126.
 \bibitem{landau1980} Landau L D, Lifshitz E M. Statistical Physics Part 1[M]. Pergamon Press, 1980.
 \bibitem{noether1918} Noether E. Invariante Variationsprobleme[J]. Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch‑Physikalische Klasse, 1918: 235–257.
